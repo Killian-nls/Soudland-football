@@ -1,5 +1,7 @@
 import Background from './classes/background.js';
+import Player from './classes/player.js';
 const dTexturePath = '../../assets/textures/dash.png';
+const pTexturePath = '../../assets/textures/players/ronaldo.png';
 
 
 async function main() {
@@ -19,6 +21,10 @@ async function main() {
     const background = new Background(client, dTexture);
 
     app.stage.addChild(background);
+
+    const player1 = new Player('Ronaldo', 'home', 0xff0000, pTexturePath);
+    player1.position.set(200, 300);
+    app.stage.addChild(player1);
     
     container.appendChild(app.canvas);
 
