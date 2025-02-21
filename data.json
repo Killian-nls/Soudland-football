@@ -1,0 +1,11 @@
+[{
+    "teamname" : "olympique lyonais",
+    "teamabreviation" : "OL",
+    "teamTheme" : "0xff0000",
+    "players" : [
+        {
+            "playerName" : "Jean baptise",
+            "playerLastName": "Gomis"
+        }
+    ]
+}]

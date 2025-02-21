@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+}
+
+.screen-container {
+    height: 100vh;
+    width: calc(100vh * (9 / 16));
+}

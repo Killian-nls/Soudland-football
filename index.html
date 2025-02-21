@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootLand</title>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="scripts/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="screen-container"></div>
+    <div class="control-panel home">
+        <div class="players-panel"></div>
+        <div class="highlight-panel">
+            <select class="team-options" name="team-options" id="team-options">
+                <option value="home">Domicile</option>
+                <option value="away">Exterieur</option>
+            </select>
+            <select class="zone-options" name="zone-options" id="zone-options">
+                <option value="penalty-area">Zone de réparation</option>
+                <option value="deffense-horizontal-outer-corridor">Zone de déffense</option>
+                <option value="deffense-horizontal-inner-corridor">Zone de milieu déffensive</option>
+                <option value="horizontal-corridor">Milieu de terrain</option>
+                <option value="offense-horizontal-inner-corridor">Zone de milieu offensive</option>
+                <option value="offense-horizontal-outer-corridor">Zone d'attaque</option>
+                <option value="left-outer-corridor">Aile gauche</option>
+                <option value="left-inner-corridor">Milieu gauche</option>
+                <option value="vertical-corridor">Milieu vertical</option>
+                <option value="right-outer-corridor">Aile droite</option>
+                <option value="right-inner-corridor">Milieu droit</option>
+                <option value="right-corner">Corner droit</option>
+                <option value="left-corner">Corner gauche</option>
+                <option value="circle">Rond central</option>
+            </select>
+            <input type="color" class="color-options">
+            <input type="range" class="alpha-options" min="0" max="1" step="0.01">
+            <button class="highlight-button" id="highlight-button">Highlight</button>
+            <button class="reset-button">Clear</button>
+        </div>
+    </div>
+</body>
+</html>
